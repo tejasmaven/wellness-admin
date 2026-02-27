@@ -7,7 +7,8 @@ import Dashboard from "../pages/Dashboard";
 import Admins from "../pages/Admins";
 import Permissions from "../pages/Permissions";
 import Role from "../pages/Role";
-
+import Partners from "../pages/Partners";
+import Centers from "../pages/Center";
 export const router = createBrowserRouter([
   {
     path: "/login",
@@ -23,7 +24,9 @@ export const router = createBrowserRouter([
           { path: "/dashboard", element: <Dashboard /> },
          { path: "/admins", element: <Admins /> },
          { path: "/roles", element: <Role /> },
-         { path: "/permissions", element: <Permissions /> }
+         { path: "/permissions", element: <Permissions /> },
+         { path: "/partners", element: <Partners /> },
+         { path: "/centers", element: <Centers /> }
         ]
       }
     ]

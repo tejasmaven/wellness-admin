@@ -3,7 +3,8 @@ import {
   LayoutDashboard,
   Shield,
   Users,
-  Lock
+  Lock,
+  Store
 } from "lucide-react";
 import "./sidebar.css";
 
@@ -27,6 +28,16 @@ const menu = [
     label: "Permissions",
     to: "/permissions",
     icon: Lock
+  },
+  {
+    label: "Partners",
+    to: "/partners",
+    icon: Users
+  },
+  {
+    label: "Centers",
+    to: "/centers",
+    icon: Store
   }
 ];
 
@@ -34,7 +45,7 @@ export default function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
-        Center Guard
+        Wellness
       </div>
 
       <nav className="sidebar-nav">
